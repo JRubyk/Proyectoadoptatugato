@@ -5,35 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-<body>
-  <header>
-    <h1>Adopta a Luna</h1>
-    <nav aria-label="Navegación principal">
-      <ul> 
-         <!-- Este menu lo hice como lista pero lo ideal es transformarlo a futuro como una barra de menú-->
-        <li><a href="#sobre">Sobre Luna</a></li>
-        <li><a href="#personalidad">Personalidad</a></li>
-        <li><a href="#requisitos">Requisitos</a></li>
-        <li><a href="#proceso">Proceso</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+  <link rel="stylesheet" href="ASSETS/Css/Style.css">
+</head>
+<body><body class="bg-info-subtle"> <!-- fondo muy similar a ligthblue -->
+    <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-bottom"> 
+    <!-- se agrega la funcion de Sticky- top para que no se pierda el navbar -->
+    <div class="container">  <!-- contenedor de Navbar -->
+    <a class="navbar-brand fw-bold" href="#home">Adopta Tu Gato</a>
 
-    <!-- Imagen adaptativa para movil y escritorio -->
-    <figure>
-      <picture>
-        <!-- Imagen grande-->
-        <source type="image/webp" srcset="ASSETS/Gata%20Atigrada.webp" media="(min-width: 701px)">
-        <!-- Versión móvil vertical -->
-        <source srcset="ASSETS/Gata%20Atigrada%20movil.jpg" media="(max-width: 700px)">
-        <!-- Ancho de escritorio -->
-        <img src="ASSETS/Gata%20Atigrada%20movil.jpg" alt="Gatita Luna, serena y calmada mirando hacia la camara" loading="lazy">
-        
-      </picture>
-      <figcaption>Luna: juguetona, sociable y lista para su nuevo hogar.</figcaption>
-    </figure>
-  </header>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#quienes-somos">Quienes somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#en-adopcion">En Adopción</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#requisitos">Requisitos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#proceso">Proceso</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- HERO -->
+<section id="hero-text" class="hero-bg py-5 border-bottom position-relative">
+  <!-- Overlay solo con utilidades Bootstrap -->
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
+  <div class="container position-relative z-1">
+    <div class="p-5 rounded-3">
+      <h1 class="display-5 fw-bold text-danger mb-3">Adopta Tu Gato</h1>
+      <p class="lead text-white mb-0">¡Tu hogar puede cambiar una vida!</p>
+    </div>
+  </div>
+</section>
+<div class="container py-4"><!-- 👈 Container Bootstrap Pagina Completa -->
+  
+<!--===============================QUIENES SOMOS=================================-->
+<section id="quienes-somos" aria-labelledby="t-quienes-somos" class="mb-5">
+  <div class="col-md-5">
+  <div class="ratio ratio-4x3 rounded-3 overflow-hidden shadow-sm">
+    <img src="ASSETS/Gato-portada.jpg" alt="..." class="w-100 h-100 object-fit-cover">
+  </div>
+</div>
+
 
   <main>
     <!-- Descripcion Sobre Luna -->
@@ -158,5 +186,6 @@
       <p> Diseñado y Desarrollado por J.Rubyk</p>
     </nav>
   </footer>
+   </div><!-- cierre de container py-4 -->
 </body>
 </html>

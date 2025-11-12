@@ -1,0 +1,9 @@
+/* HERO con imagen de fondo */
+.hero-bg {
+  /* ajusta el nombre exacto del archivo */
+  background-image: url("../Gato-portada.jpg"); 
+  background-size: cover;      /* llena el área sin deformar (puede recortar) */
+  background-position: center; /* centrada */
+  background-repeat: no-repeat;
+  min-height: 360px;           /* da alto mínimo al hero */
+}
