@@ -1,0 +1,20 @@
+/*Lección 3, ejercicio 1 crear archivo Css y enlazarlo al HTMLl*/
+/*Ejercicio 2: fondo del documento a lightblue*/
+body {
+  background-color: lightblue;
+}
+
+/* Ejercicio 3: títulos en rojo */
+h1, h2, h3, h4, h5, h6 {
+  color: red;
+}
+
+/* Ejercicio 4:
+   Imagen fija (la de práctica #3), 400x300, centrada con margen automático.
+   para este paso se apoyo con ChatGpt */
+img[src$="gatos-atigrados.jpg"] {
+  display: block;
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+}
