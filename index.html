@@ -1,11 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
 <body>
-    <h1>Hola soy jeimy</h1>
+  <header>
+    <h1>Adopta a Luna</h1>
+    <nav aria-label="Navegación principal">
+      <ul> 
+         <!-- Este menu lo hice como lista pero lo ideal es transformarlo a futuro como una barra de menú-->
+        <li><a href="#sobre">Sobre Luna</a></li>
+        <li><a href="#personalidad">Personalidad</a></li>
+        <li><a href="#requisitos">Requisitos</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- Imagen adaptativa para movil y escritorio -->
+    <figure>
+      <picture>
+        <!-- Imagen grande-->
+        <source type="image/webp" srcset="ASSETS/Gata%20Atigrada.webp" media="(min-width: 701px)">
+        <!-- Versión móvil vertical -->
+        <source srcset="ASSETS/Gata%20Atigrada%20movil.jpg" media="(max-width: 700px)">
+        <!-- Ancho de escritorio -->
+        <img src="ASSETS/Gata%20Atigrada%20movil.jpg" alt="Gatita Luna, serena y calmada mirando hacia la camara" loading="lazy">
+        
+      </picture>
+      <figcaption>Luna: juguetona, sociable y lista para su nuevo hogar.</figcaption>
+    </figure>
+  </header>
+
+  <main>
+    <!-- Descripcion Sobre Luna -->
+    <section id="sobre" aria-labelledby="t-sobre">
+      <h2 id="t-sobre">Sobre Luna</h2>
+      <article>
+        <h3>Ficha rápida</h3>
+        <!-- TABLA integrada -->
+        <table border="1">
+          <caption>Información general de Luna</caption>
+          <thead>
+            <tr>
+              <th>Dato</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Edad</td>
+              <td><time datetime="2024-06">1 año aprox.</time></td>
+            </tr>
+            <tr>
+              <td>Salud</td>
+              <td>Esterilizada, desparasitada y con vacunas al día.</td>
+            </tr>
+            <tr>
+              <td>Carácter</td>
+              <td>Curiosa, tranquila y muy cariñosa.</td>
+            </tr>
+            <tr>
+              <td>Convivencia</td>
+              <td>Se adapta a interiores seguros (indoor). Prefiere espacios tranquilos.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <aside>
+          <p><strong>Nota:</strong> prepara una habitación tranquila para su llegada y usa mallas de seguridad en las ventanas.</p>
+        </aside>
+      </article>
+    </section>
+
+    <!-- PERSONALIDAD -->
+    <section id="personalidad" aria-labelledby="t-personalidad">
+      <h2 id="t-personalidad">Personalidad</h2>
+      <article>
+        <h3>Dulce y juguetona</h3>
+        <p>
+          Le encantan las sesiones cortas de juego y las siestas al sol. Se acerca sola cuando quiere
+          cariño y se comunica con suaves maullidos.
+        </p>
+
+        <!-- Imagen no adaptativa. -->
+        <figure>
+       <img src="ASSETS/gatos-atigrados.jpg"
+       alt="Primer plano de Luna jugando con una pelota al sol"
+       width="600" height="400" loading="lazy">
+  <figcaption>Juego diario recomendado: 2–3 sesiones de 5–10 minutos.</figcaption>
+</figure>
+
+        <details>
+          <summary>Consejos de adaptación</summary>
+          <p>
+            Prepara una habitación tranquila de llegada con arenero, comida, agua y escondites.
+            Introduce el resto de la casa de forma gradual.
+          </p>
+        </details>
+      </article>
+    </section>
+
+    <!-- REQUISITOS hubiera sido bueno hacer un formulario aqui -->
+    <section id="requisitos" aria-labelledby="t-requisitos">
+      <h2 id="t-requisitos">Requisitos para adoptar</h2>
+      <article>
+        <h3>Compromiso responsable</h3>
+        <ul>
+          <li>Ambiente seguro (mallas/ventanas protegidas).</li>
+          <li>Alimentación de calidad y agua fresca.</li>
+          <li>Arenero limpio y controles veterinarios.</li>
+          <li>Juegos y enriquecimiento ambiental diarios.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- PROCESO (descriptivo) lista enumerada-->
+    <section id="proceso" aria-labelledby="t-proceso">
+      <h2 id="t-proceso">Proceso de adopción</h2>
+      <article>
+        <h3>Pasos</h3>
+        <ol>
+          <li>Lee la información de esta página y confirma que cumples los requisitos.</li>
+          <li>Contáctanos (correo o teléfono) para coordinar una entrevista informativa.</li>
+          <li>Visita programada para conocer a Luna y resolver dudas.</li>
+          <li>Seguimiento inicial para asegurar una buena adaptación.</li>
+        </ol>
+      </article>
+    </section>
+
+    <!-- CONTACTO (sin form; solo enlaces) -->
+    <section id="contacto" aria-labelledby="t-contacto">
+      <h2 id="t-contacto">Contacto</h2>
+      <article>
+        <h3>Escríbenos o llámanos</h3>
+        <p>
+          Correo: <a href="mailto:adopciones@refugioejemplo.org">adopciones@refugioejemplo.org</a><br>
+          Teléfono/WhatsApp: <a href="tel:+56912345678">+56 9 1234 5678</a>
+        </p>
+        <address>
+          Refugio Huellitas — Graneros, Región de O’Higgins, Chile
+        </address>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <nav aria-label="Enlaces utilitarios">
+      <ul>
+        <li><a href="#sobre">Volver arriba</a></li>
+        <li><a href="#requisitos">Requisitos</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+      </ul>
+      <p> Diseñado y Desarrollado por J.Rubyk</p>
+    </nav>
+  </footer>
 </body>
 </html>
