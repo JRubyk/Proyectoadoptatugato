@@ -72,87 +72,156 @@
 <div class="container py-4"><!-- 👈 Container Bootstrap Pagina Completa -->
   
 <!--===============================QUIENES SOMOS=================================-->
-<section id="quienes-somos" aria-labelledby="t-quienes-somos" class="mb-5">
-  <div class="col-md-5 d-flex justify-content-center mb-4 mb-md-0">
-  <div class="ratio ratio-4x3" style="max-width: 260px;">
-    <img
-      src="ASSETS/Logo%20A.png"
-      alt="Logo Adopta Tu Gato"
-      class="w-100 h-100 object-fit-contain">
-<!-- NOTAS DE CLASES USADAS:
-d-flex justify-content-center
-→ centra el bloque del logo dentro de la columna.
-ratio ratio-4x3
-→ crea un recuadro con proporción 4:3 tipo tarjeta, siempre del mismo aspecto.
-style="max-width: 260px;"
-→ evita que el logo sea gigante; puedes ajustar ese número.
-w-100 h-100
-→ hace que la imagen ocupe todo el espacio del recuadro.
-object-fit-contain muy importante: hace que el logo se vea completo dentro del recuadro (no cortado), 
-dejando bordes en blanco si sobra espacio.-->
-  </div>
-  </div>
-</div>
+<section id="quienes-somos" class="py-5 bg-eaeaea border-bottom">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      
+      <!-- Columna izquierda: logo -->
+      <div class="col-md-5 d-flex justify-content-center mb-4 mb-md-0">
+        <div class="ratio ratio-4x3" style="max-width: 260px;">
+          <img
+            src="ASSETS/Logo%20A.png"
+            alt="Logo Adopta Tu Gato"
+            class="w-100 h-100 object-fit-contain">
+        </div>
+      </div>
 
-<!--===========================Seguir Mañana 13/11============================-->
-  <main>
-    <!-- Descripcion Sobre Luna -->
-    <section id="sobre" aria-labelledby="t-sobre">
-      <h2 id="t-sobre">Sobre Luna</h2>
-      <article>
-        <h3>Ficha rápida</h3>
-        <!-- TABLA integrada -->
-        <table border="1">
-          <caption>Información general de Luna</caption>
-          <thead>
-            <tr>
-              <th>Dato</th>
-              <th>Descripción</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Edad</td>
-              <td><time datetime="2024-06">1 año aprox.</time></td>
-            </tr>
-            <tr>
-              <td>Salud</td>
-              <td>Esterilizada, desparasitada y con vacunas al día.</td>
-            </tr>
-            <tr>
-              <td>Carácter</td>
-              <td>Curiosa, tranquila y muy cariñosa.</td>
-            </tr>
-            <tr>
-              <td>Convivencia</td>
-              <td>Se adapta a interiores seguros (indoor). Prefiere espacios tranquilos.</td>
-            </tr>
-          </tbody>
-        </table>
+      <!-- Columna derecha: título, texto y botón -->
+      <div class="col-md-7 d-flex flex-column justify-content-center">
+        <h2 class="fw-bold mb-3">¿Quiénes somos?</h2>
 
-        <aside>
-          <p><strong>Nota:</strong> prepara una habitación tranquila para su llegada y usa mallas de seguridad en las ventanas.</p>
-        </aside>
-      </article>
-    </section>
-
-    <!-- PERSONALIDAD -->
-    <section id="personalidad" aria-labelledby="t-personalidad">
-      <h2 id="t-personalidad">Personalidad</h2>
-      <article>
-        <h3>Dulce y juguetona</h3>
-        <p>
-          Le encantan las sesiones cortas de juego y las siestas al sol. Se acerca sola cuando quiere
-          cariño y se comunica con suaves maullidos.
+        <p class="mb-3">
+          Somos una organización dedicada a rescatar, rehabilitar y reubicar gatitos en hogares responsables.
+          Cada gato que llega a nosotros recibe atención, cuidados y cariño mientras buscamos para él una nueva familia.
         </p>
 
-        <!-- Imagen no adaptativa. -->
-        <figure>
-       <img src="ASSETS/gatos-atigrados.jpg"
-       alt="Primer plano de Luna jugando con una pelota al sol"
-       width="600" height="400" loading="lazy">
-  <figcaption>Juego diario recomendado: 2–3 sesiones de 5–10 minutos.</figcaption>
-</figure>
+        <p class="mb-4">
+          Creemos en la adopción responsable y acompañamos a los adoptantes en todo el proceso:
+          desde la primera visita hasta la adaptación en su nuevo hogar.
+        </p>
+
+        <a href="#Contacto" class="btn btn-danger btn-lg align-self-start">
+          Contáctanos
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!--===============================EN ADOPCIÓN=================================-->
+<section id="en-adopcion" class="py-5 border-bottom">
+  <div class="container">
+    <h2 class="fw-bold mb-4">En adopción</h2>
+    <p class="mb-4">
+      Estos son algunos de los gatitos que actualmente buscan hogar. 
+      Cada uno tiene su propia historia, personalidad y necesidades. 
+    </p>
+
+    <!-- Grid de tarjetas: 1 col en móvil, 3 en pantallas medianas+ -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      <!-- Gato 1 -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="ASSETS/Luna.png" class="card-img-top" alt="Gatita Luna atigrada">
+          <div class="card-body">
+            <h5 class="card-title">Luna</h5>
+            <p class="card-text mb-1"><strong>Edad:</strong> 2 años</p>
+            <p class="card-text mb-1"><strong>Color:</strong> Atigrada Gris</p>
+            <p class="card-text mb-2"><strong>Actitud:</strong> Cariñosa pero algo tímida al principio.</p>
+            <p class="card-text">
+              Ideal para un hogar tranquilo, le encanta dormir cerca de la ventana y observar todo.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gato 2 -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="ASSETS/Milo.png" class="card-img-top" alt="Gato Milo blanco y gris">
+          <div class="card-body">
+            <h5 class="card-title">Milo</h5>
+            <p class="card-text mb-1"><strong>Edad:</strong> 1 año</p>
+            <p class="card-text mb-1"><strong>Color:</strong> Blanco y gris</p>
+            <p class="card-text mb-2"><strong>Actitud:</strong> Juguetón y muy curioso.</p>
+            <p class="card-text">
+              Se adapta bien a familias con niños, disfruta jugar con pelotas y plumas.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gato 3 -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="ASSETS/Nala.png" class="card-img-top" alt="Gatita Nala carey">
+          <div class="card-body">
+            <h5 class="card-title">Nala</h5>
+            <p class="card-text mb-1"><strong>Edad:</strong> 3 años</p>
+            <p class="card-text mb-1"><strong>Color:</strong> Carey</p>
+            <p class="card-text mb-2"><strong>Actitud:</strong> Tranquila y observadora.</p>
+            <p class="card-text">
+              Le gusta tener su propio espacio, perfecta para personas que trabajan desde casa.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gato 4 -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="ASSETS/Simba.png" class="card-img-top" alt="Gato Simba naranja">
+          <div class="card-body">
+            <h5 class="card-title">Simba</h5>
+            <p class="card-text mb-1"><strong>Edad:</strong> 8 meses</p>
+            <p class="card-text mb-1"><strong>Color:</strong> Naranjo</p>
+            <p class="card-text mb-2"><strong>Actitud:</strong> Muy activo y sociable.</p>
+            <p class="card-text">
+              Necesita un hogar donde pueda correr y jugar, ideal si hay otros gatos jóvenes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gato 5 -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="ASSETS/Maya.png" class="card-img-top" alt="Gatita Maya blanca y negra">
+          <div class="card-body">
+            <h5 class="card-title">Maya</h5>
+            <p class="card-text mb-1"><strong>Edad:</strong> 1 año y medio</p>
+            <p class="card-text mb-1"><strong>Color:</strong> Blanca y negra</p>
+            <p class="card-text mb-2"><strong>Actitud:</strong> Muy regalona y conversadora.</p>
+            <p class="card-text">
+              Le encanta acompañar a las personas en el sillón y pedir mimos.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gato 6 -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="ASSETS/Tom.png" class="card-img-top" alt="Gato Tom gris oscuro">
+          <div class="card-body">
+            <h5 class="card-title">Tom</h5>
+            <p class="card-text mb-1"><strong>Edad:</strong> 4 años</p>
+            <p class="card-text mb-1"><strong>Color:</strong> Negro</p>
+            <p class="card-text mb-2"><strong>Actitud:</strong> Calmado y muy limpio.</p>
+            <p class="card-text">
+              Perfecto para departamentos, se adapta bien a rutinas tranquilas.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- /row -->
+  </div>
+</section>
+
+<!--===========================Por corregir============================-->
+  
 
         <details>
           <summary>Consejos de adaptación</summary>
@@ -219,5 +288,7 @@ dejando bordes en blanco si sobra espacio.-->
     </nav>
   </footer>
    </div><!-- cierre de container py-4 -->
+   <!-- Bootstrap JS Bundle con Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
