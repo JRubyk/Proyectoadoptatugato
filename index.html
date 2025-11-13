@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="ASSETS/Css/Style.css">
 </head>
@@ -41,13 +42,15 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav fw-semibold">
         <li class="nav-item">
+          <a class="nav-link" href="#quienes-somos">Quienes Somos</a>
+        </li>
           <a class="nav-link" href="#en-adopcion">En Adopción</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#requisitos">Requisitos</a>
+          <a class="nav-link" href="#info-adopcion">Requisitos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#proceso">Proceso</a>
+          <a class="nav-link" href="#info-adopcion">Proceso</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#Contacto">Contacto</a>
@@ -64,7 +67,7 @@
   <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
   <div class="container position-relative z-1">
     <div class="p-5 rounded-3">
-      <h1 class="display-5 fw-bold text-danger mb-3">Adopta Tu Gato</h1>
+      <h1 class="display-5 fw-bold ">Adopta Tu Gato</h1>
       <p class="lead text-white mb-0">¡Tu hogar puede cambiar una vida!</p>
     </div>
   </div>
@@ -219,76 +222,222 @@
     </div> <!-- /row -->
   </div>
 </section>
+<!--===============================Requisitos y Proceso de Adopción=================================-->
+<section id="info-adopcion" class="py-5">
+  <div class="container">
+    <div class="row g-4">
 
-<!--===========================Por corregir============================-->
-  
+      <!-- COLUMNA IZQUIERDA (70%) -->
+      <div class="col-md-8">
 
-        <details>
-          <summary>Consejos de adaptación</summary>
-          <p>
-            Prepara una habitación tranquila de llegada con arenero, comida, agua y escondites.
-            Introduce el resto de la casa de forma gradual.
-          </p>
-        </details>
-      </article>
-    </section>
+        <h2 class="fw-bold mb-4">Información para Adoptar</h2>
 
-    <!-- REQUISITOS hubiera sido bueno hacer un formulario aqui -->
-    <section id="requisitos" aria-labelledby="t-requisitos">
-      <h2 id="t-requisitos">Requisitos para adoptar</h2>
-      <article>
-        <h3>Compromiso responsable</h3>
-        <ul>
-          <li>Ambiente seguro (mallas/ventanas protegidas).</li>
-          <li>Alimentación de calidad y agua fresca.</li>
-          <li>Arenero limpio y controles veterinarios.</li>
-          <li>Juegos y enriquecimiento ambiental diarios.</li>
-        </ul>
-      </article>
-    </section>
+        <div class="accordion" id="accordionAdopcion">
+          <!-- REQUISITOS -->
+           
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingReq">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReq" aria-expanded="true" aria-controls="collapseReq">
+                Requisitos para adoptar
+              </button>
+            </h2>
+            <div id="collapseReq" class="accordion-collapse collapse show" aria-labelledby="headingReq" data-bs-parent="#accordionAdopcion">
+              <div class="accordion-body">
+                <ul>
+                  <li>Ser mayor de 18 años.</li>
+                  <li>Presentar cédula de identidad.</li>
+                  <li>Completar formulario de adopción.</li>
+                  <li>Contar con espacio adecuado en el hogar. (mallas y ventanas protegidas)</li>
+                  <li>Aceptar visita de seguimiento si es necesaria.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-    <!-- PROCESO (descriptivo) lista enumerada-->
-    <section id="proceso" aria-labelledby="t-proceso">
-      <h2 id="t-proceso">Proceso de adopción</h2>
-      <article>
-        <h3>Pasos</h3>
-        <ol>
-          <li>Lee la información de esta página y confirma que cumples los requisitos.</li>
-          <li>Contáctanos (correo o teléfono) para coordinar una entrevista informativa.</li>
-          <li>Visita programada para conocer a Luna y resolver dudas.</li>
-          <li>Seguimiento inicial para asegurar una buena adaptación.</li>
-        </ol>
-      </article>
-    </section>
+          <!-- PROCESO -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingProceso">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProceso" aria-expanded="false" aria-controls="collapseProceso">
+                Proceso de adopción
+              </button>
+            </h2>
+            <div id="collapseProceso" class="accordion-collapse collapse" aria-labelledby="headingProceso" data-bs-parent="#accordionAdopcion">
+              <div class="accordion-body">
+                <ol>
+                  <li>Selecciona el gatito que deseas adoptar.</li>
+                  <li>Completa el formulario de adopción.</li>
+                  <li>Nos comunicaremos contigo para coordinar entrevista.</li>
+                  <li>Se realiza visita o videollamada para validar espacio.</li>
+                  <li>Si todo está ok, se agenda entrega del gatito.</li>
+                  <li>Se hace seguimiento durante la adaptación.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
 
-    <!-- CONTACTO (sin form; solo enlaces) -->
-    <section id="contacto" aria-labelledby="t-contacto">
-      <h2 id="t-contacto">Contacto</h2>
-      <article>
-        <h3>Escríbenos o llámanos</h3>
-        <p>
-          Correo: <a href="mailto:adopciones@refugioejemplo.org">adopciones@refugioejemplo.org</a><br>
-          Teléfono/WhatsApp: <a href="tel:+56912345678">+56 9 1234 5678</a>
+        </div>
+      </div>
+
+      <!-- COLUMNA DERECHA (30%) -->
+      <div class="col-md-4 d-flex justify-content-center">
+        <img 
+          src="ASSETS/gatoadoptado.png"
+          alt="Proceso de adopción"
+          class="img-fluid rounded-3 shadow-sm"
+          style="max-height: 500px; object-fit: cover;">
+      </div>
+
+    </div>
+  </div>
+</section>
+<!--===============================CONTACTO=================================-->
+<!--===============================CONTACTO=================================-->
+<section id="Contacto" class="py-5 bg-body-tertiary border-top">
+  <div class="container">
+    <div class="row g-4 align-items-start">
+
+      <!-- IZQUIERDA: FORMULARIO -->
+      <div class="col-md-7">
+        <h2 class="fw-bold mb-3">Formulario de contacto</h2>
+        <p class="mb-4">
+          Completa este formulario para iniciar el proceso de adopción o hacer tus consultas.
         </p>
-        <address>
-          Refugio Huellitas — Graneros, Región de O’Higgins, Chile
-        </address>
-      </article>
-    </section>
-  </main>
 
-  <footer>
-    <nav aria-label="Enlaces utilitarios">
-      <ul>
-        <li><a href="#sobre">Volver arriba</a></li>
-        <li><a href="#requisitos">Requisitos</a></li>
-        <li><a href="#proceso">Proceso</a></li>
-      </ul>
-      <p> Diseñado y Desarrollado por J.Rubyk</p>
-    </nav>
-  </footer>
+        <form id="formContacto" action="" method="post">
+          <!-- Gatito de interés -->
+          <div class="mb-3">
+            <label for="gatoInteres" class="form-label">Gatito de interés</label>
+            <select class="form-select" id="gatoInteres" name="gatoInteres" required>
+              <option value="" selected disabled>Selecciona un gatito</option>
+              <option value="Luna">Luna</option>
+              <option value="Milo">Milo</option>
+              <option value="Nala">Nala</option>
+              <option value="Simba">Simba</option>
+              <option value="Maya">Maya</option>
+              <option value="Tom">Tom</option>
+              <option value="No estoy seguro">Aún no estoy seguro/a</option>
+            </select>
+          </div>
+
+          <!-- Nombre -->
+          <div class="mb-3">
+            <label for="nombrePersona" class="form-label">Nombre completo</label>
+            <input type="text" class="form-control" id="nombrePersona" name="nombrePersona" required>
+          </div>
+
+          <!-- Correo -->
+          <div class="mb-3">
+            <label for="correoPersona" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="correoPersona" name="correoPersona" required>
+          </div>
+
+          <!-- Checkbox -->
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="acepta" id="aceptaContacto" name="aceptaContacto" required>
+            <label class="form-check-label" for="aceptaContacto">
+              Autorizo que me contacten a futuro y acepto tener una entrevista, ya sea presencial o por videollamada.
+            </label>
+          </div>
+
+          <!-- Advertencia -->
+          <p class="small text-muted mb-3">
+            <strong>Importante:</strong> el envío de este formulario <u>no garantiza</u> la adopción del gatito.
+            Primero debemos revisar los requisitos y completar el proceso de adopción.
+          </p>
+
+          <!-- Botón de envío -->
+          <button type="submit" class="btn btn-outline-danger w-100" id="btnFormulario">
+            Enviar formulario
+          </button>
+
+          <!-- Alerta -->
+          <div class="alert alert-success mt-3 d-none" id="alertaFormulario" role="alert">
+            ✔ Solicitud enviada. Nos contactaremos contigo a la brevedad.
+          </div>
+        </form>
+      </div>
+
+      <!-- DERECHA: IMAGEN + REDES SOCIALES -->
+      <div class="col-md-5 d-flex flex-column align-items-center">
+
+        <!-- Imagen -->
+        <img 
+          src="ASSETS/contacto.png" 
+          alt="Gatito en adopción"
+          class="img-fluid rounded-3 shadow-sm mb-3"
+          style="max-height: 380px; object-fit: cover;">
+
+        <!-- Botones minimalistas negros -->
+        <div class="d-flex gap-3 mt-2">
+          <a href="#" class="btn btn-dark rounded-circle p-3 d-flex align-items-center justify-content-center">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="#" class="btn btn-dark rounded-circle p-3 d-flex align-items-center justify-content-center">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="#" class="btn btn-dark rounded-circle p-3 d-flex align-items-center justify-content-center">
+            <i class="bi bi-tiktok"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
    </div><!-- cierre de container py-4 -->
+<!--===============================FOOTER=================================-->
+<footer class="py-4 bg-dark text-light">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- IZQUIERDA: LOGO -->
+      <div class="col-md-6 d-flex align-items-center mb-3 mb-md-0">
+        <img 
+          src="ASSETS/Logo%20B.png" 
+          alt="Logo Adopta Tu Gato"
+          class="img-fluid"
+          style="max-width: 130px;">
+      </div>
+
+      <!-- DERECHA: TEXTO -->
+      <div class="col-md-6 text-md-end">
+        <p class="mb-0">
+          © 2025 Adopta Tu Gato — Diseñado por <strong>J.Rubyk</strong>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+ 
+<!--===============================EXTRAS=================================-->
    <!-- Bootstrap JS Bundle con Popper -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const form   = document.getElementById('formContacto');
+    const boton  = document.getElementById('btnFormulario');
+    const alerta = document.getElementById('alertaFormulario');
+
+    form.addEventListener('submit', function (event) {
+      // Evitamos que recargue la página (por ahora es solo simulación)
+      event.preventDefault();
+
+      // Mostrar la alerta
+      alerta.classList.remove('d-none');
+
+      // Cambiar color y texto del botón
+      boton.classList.remove('btn-outline-danger');
+      boton.classList.add('btn-success');
+      boton.textContent = 'Solicitud enviada';
+
+      // (Opcional) desactivar el botón para que no manden mil veces
+      boton.disabled = true;
+    });
+  });
+</script>
+
+  </body>
 </html>
