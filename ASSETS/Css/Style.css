@@ -7,3 +7,8 @@
   background-repeat: no-repeat;
   min-height: 360px;           /* da alto mínimo al hero */
 }
+
+/* color de fondo personalizado */
+.bg-Color-de-fondo {
+   background-color: #EAEAEA !important;
+}

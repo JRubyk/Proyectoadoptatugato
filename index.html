@@ -7,24 +7,39 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="ASSETS/Css/Style.css">
 </head>
-<body><body class="bg-info-subtle"> <!-- fondo muy similar a ligthblue -->
-    <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-bottom"> 
-    <!-- se agrega la funcion de Sticky- top para que no se pierda el navbar -->
-    <div class="container">  <!-- contenedor de Navbar -->
-    <a class="navbar-brand fw-bold" href="#home">Adopta Tu Gato</a>
+<body class="bg-Color-de-fondo"> <!-- Aplicando clase personalizada de fondo libertad creativa -->
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNav" aria-controls="navbarNav"
-            aria-expanded="false" aria-label="Toggle navigation">
+    <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-bottom">
+  <div class="container"> <!--Contenedor que sostiene estructura de NavBar-->
+
+    <!-- LOGO -->
+    <a class="navbar-brand d-flex align-items-center" href="#home">
+      <img src="ASSETS/Logo%20B.png"
+           alt=" Logo tipo b de Adopta Tu Gato"
+           style="height: 50px;"
+           class="me-2">
+    </a>
+
+    <!-- Boton Para Movil -->
+     <!-- 
+      data-bs-toggle= Este botón controla algo que se puede abrir y cerrar
+      data-bs-target= Cuando haga clic, abre o cierra el elemento con id
+      aria-controls= Indica qué elemento controla este botón
+      aria-expanded= Indica si el menú está abierto o cerrado
+      aria-label= Proporciona una descripción accesible del botón-->
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#quienes-somos">Quienes somos</a>
-        </li>
+    <!-- MENÚ -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav fw-semibold">
         <li class="nav-item">
           <a class="nav-link" href="#en-adopcion">En Adopción</a>
         </li>
@@ -35,12 +50,14 @@
           <a class="nav-link" href="#proceso">Proceso</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contacto">Contacto</a>
+          <a class="nav-link" href="#Contacto">Contacto</a>
         </li>
       </ul>
     </div>
+
   </div>
 </nav>
+
 <!-- HERO -->
 <section id="hero-text" class="hero-bg py-5 border-bottom position-relative">
   <!-- Overlay solo con utilidades Bootstrap -->
@@ -56,13 +73,28 @@
   
 <!--===============================QUIENES SOMOS=================================-->
 <section id="quienes-somos" aria-labelledby="t-quienes-somos" class="mb-5">
-  <div class="col-md-5">
-  <div class="ratio ratio-4x3 rounded-3 overflow-hidden shadow-sm">
-    <img src="ASSETS/Gato-portada.jpg" alt="..." class="w-100 h-100 object-fit-cover">
+  <div class="col-md-5 d-flex justify-content-center mb-4 mb-md-0">
+  <div class="ratio ratio-4x3" style="max-width: 260px;">
+    <img
+      src="ASSETS/Logo%20A.png"
+      alt="Logo Adopta Tu Gato"
+      class="w-100 h-100 object-fit-contain">
+<!-- NOTAS DE CLASES USADAS:
+d-flex justify-content-center
+→ centra el bloque del logo dentro de la columna.
+ratio ratio-4x3
+→ crea un recuadro con proporción 4:3 tipo tarjeta, siempre del mismo aspecto.
+style="max-width: 260px;"
+→ evita que el logo sea gigante; puedes ajustar ese número.
+w-100 h-100
+→ hace que la imagen ocupe todo el espacio del recuadro.
+object-fit-contain muy importante: hace que el logo se vea completo dentro del recuadro (no cortado), 
+dejando bordes en blanco si sobra espacio.-->
+  </div>
   </div>
 </div>
 
-
+<!--===========================Seguir Mañana 13/11============================-->
   <main>
     <!-- Descripcion Sobre Luna -->
     <section id="sobre" aria-labelledby="t-sobre">
